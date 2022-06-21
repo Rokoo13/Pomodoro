@@ -15,7 +15,7 @@
         android:text="@string/pomodoro"/>
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/focus_timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textSize="64dp"
-        android:text="@string/time_default"/>
+        android:textStyle="bold|italic"
+        tools:text="@string/time_default"/>
+
+    <TextView
+        android:id="@+id/rest_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/focus_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="28dp"
+        android:textStyle="italic"
+        tools:text="5:00"/>
     <Button
         android:id="@+id/start_counter"
         android:layout_width="wrap_content"
